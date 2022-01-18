@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      width: 100%;
+    }
+
+    .row {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% /3);
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+
+    img{
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Spiderman</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="Spiderman Photo.jpg" alt="Spiderman 1">
+        <h2>Spiderman 1</h2>
+        <p>Peter Parker gets bit by a radioactive spider that enables him to obtain the powers of an enhanced spider. He discovers
+        that he can climb walls, emit webs from his hands,and has enhanced reflexes. Through utlization of his newfound powers, Peter Parker goes against a villan dubbed, the
+        Green Goblin, and ultimately proves victorious</p>
+      </div>
+      <div class="column">
+        <img src="Spiderman Photo 2.jpg" alt="Spiderman 2">
+        <h2>Spiderman 2</h2>
+        <p>In this movie, Peter Parker begins to lose his powers and he begins to lose faith in himself. By questioning in his
+        belief about the purpose of Spiderman, his powers begin to subside and ultimately return
+        him to a normal human being. However, as his close loved ones begin to confront danger, Peter Parker reacquires his
+        powers as he desires to save them from peril</p>
+      </div>
+      <div class="column">
+        <img src="Spiderman Photo 3.jpg" alt="Spiderman 3">
+        <h2>Spiderman 3</h2>
+        <p>In this movie, Peter Parker makes terms with his friend, Harry Osborn. Together, they unite to fight against Venom and Sandman.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
